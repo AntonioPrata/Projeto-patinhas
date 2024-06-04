@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #66cdaa; /* Verde */
+    --secondary-color: #f6f2ed; /* Amarelo */
+    --accent-color: #746f6f; /* Vermelho */
+    --header-bg-color: #66cdaa; /* Verde água */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.logo img {
+    max-width: 150px; /* Aumenta o tamanho da logo */
+    height: auto;
+    margin-bottom: 10px; /* Adiciona um espaço abaixo da logo */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px; /* Alinha os itens à direita */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: underline;
+    padding: 5px 10px; /* Adiciona um espaçamento interno aos itens */
+    border-radius: 5px; /* Adiciona bordas arredondadas aos itens */
+    transition: background-color 0.3s; /* Adiciona uma transição suave na mudança de cor de fundo */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Destaca o item com uma cor de fundo ao passar o mouse */
+}
+
+section {
+    padding: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.about-item {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.about-item img {
+    max-width: 100%;
+    max-height: 200px; /* Defina a altura máxima desejada */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    padding: 25px;
+    margin-right: 10px;
+}
+
+.about-item img:hover {
+    transform: scale(1.1);
+}
+
+.donate-content {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.donate-content img {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Adiciona um espaço acima da imagem */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
