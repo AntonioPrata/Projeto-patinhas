@@ -11,17 +11,17 @@
 <body>
     <header>
         <div class="header-content">
-            <div class="logo">
-                <img src="logo.png" alt="Logo">
+            <img class="logo" src="logo.png" alt="Logo">
+            <div>
+                <h1 class="text-content">ONG de Cachorros e Gatos SJPA</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#donate">Faça Sua Doação</a></li>
+                        <li><a href="#contact">Contatos</a></li>
+                    </ul>
+                </nav>
             </div>
-            <h1>ONG de Cachorros e Gatos SJPA</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">Sobre Nós</a></li>
-                    <li><a href="#donate">Faça Sua Doação</a></li>
-                    <li><a href="#contact">Contatos</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
     <section id="about">
@@ -48,40 +48,33 @@
                     <p>Integer nec sollicitudin eros. In hac habitasse platea dictumst. Etiam ut accumsan ligula. Phasellus lobortis justo nec tincidunt pulvinar. Morbi sit amet placerat mauris, id interdum libero.</p>
                 </div>
             </div>
-            <div class="about-item">
+
+            <div class="our-team">
+                <div class="about-text">
+                    <h3>Nossa Equipe</h3>
+                    <p>Na ONG SJPA, acreditamos que a transformação social é resultado do esforço coletivo de indivíduos comprometidos com o bem-estar da comunidade. Nossa equipe é formada por profissionais dedicados e voluntários apaixonados, todos unidos pelo propósito de promover a justiça social e a igualdade de oportunidades.</p>
+                </div>
                 <img src="cachorro.jpg" alt="Passarinho 1">
                 <img src="cachorro.jpg" alt="Passarinho 2">
                 <img src="cachorro.jpg" alt="Passarinho 3">
-                <div class="about-text">
-                    <h3>Nossa Equipe</h3>
-                    <p>Aqui você pode adicionar informações sobre a equipe da sua ONG de animais.</p>
-                </div>
             </div>
+
         </div>
     </section>
+    
     <section id="donate">
-        <h2>Faça Sua Doação</h2>
         <div class="donate-content">
+            <h2>Faça Sua Doação</h2>
             <p>Sua doação faz a diferença na vida de muitos animais. Contribua para ajudar-nos a manter nosso trabalho de resgate e cuidado.</p>
             <img src="gatin.jpg" alt="Gato">
             <p>Chave pix:  
-                <span id="chavePix">10000</span>
+                <span id="chavePix">cd3001a1-d90c-404b-b16e-8aa93ed7e307</span>
                 <button onclick="copiarChavePix()">Copiar</button>
             </p>
         </div>   
-        <script>
-        function copiarChavePix() {
-            var chavePix = document.getElementById("chavePix");
-            var range = document.createRange();
-            range.selectNode(chavePix);
-            window.getSelection().removeAllRanges();
-            window.getSelection().addRange(range);
-            document.execCommand("copy");
-            window.getSelection().removeAllRanges();
-            alert("Chave Pix copiada: " + chavePix.textContent);
-        }
-        </script>
+
     </section>
+
     <section id="contact">
         <h2>Contatos</h2>
         <div class="contact-content">
@@ -96,6 +89,20 @@
     <footer>
         <p>&copy; 2024 ONG de Cachorros e Gatos SJPA. Todos os direitos reservados.</p>
     </footer>
+
+
+    <script>
+        function copiarChavePix() {
+            var chavePix = document.getElementById("chavePix");
+            var range = document.createRange();
+            range.selectNode(chavePix);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            alert("Chave Pix copiada: " + chavePix.textContent);
+        }
+        </script>
 </body>
 </html>
 

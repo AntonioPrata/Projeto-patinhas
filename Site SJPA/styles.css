@@ -24,14 +24,10 @@ header {
     background-color: var(--header-bg-color);
     color: #fff;
     text-align: center;
-    padding: 15px 0;
+    padding: 50px;
 }
 
-.logo img {
-    max-width: 150px; /* Aumenta o tamanho da logo */
-    height: auto;
-    margin-bottom: 10px; /* Adiciona um espaço abaixo da logo */
-}
+
 
 nav ul {
     list-style-type: none;
@@ -57,8 +53,14 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Destaca o item com uma cor de fundo ao passar o mouse */
 }
 
-section {
-    padding: 20px;
+#about {
+    width: 70%;
+    margin: auto;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 30px;
 }
 
 .about-content {
@@ -82,10 +84,20 @@ section {
     transition: transform 0.3s;
     padding: 25px;
     margin-right: 10px;
+    float: none;
 }
 
 .about-item img:hover {
     transform: scale(1.1);
+}
+
+#donate {
+    margin-top: 70px;
+}
+
+#donate h2 {
+    text-align: center;
+    font-size: 30px;
 }
 
 .donate-content {
@@ -111,4 +123,37 @@ footer {
     padding: 10px 0;
 }
 
+#chavePix {
+    color: black;
+}
 
+/*
+top
+right
+bottom
+left
+ */
+
+#contact {
+    margin: 70px 0 70px 0;
+    text-align: center;
+}
+
+.our-team {
+    margin-top: 50px
+}
+
+.our-team img{
+    max-width: 100%;
+    max-height: 200px; /* Defina a altura máxima desejada */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    padding: 25px;
+    margin-right: 10px;
+    float: none;
+}
+ 
+.our-team h3 {
+    font-size: 25px;
+}
